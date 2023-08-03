@@ -1,7 +1,7 @@
-const ItemListContainer = () =>{
+const ItemListContainer = ({greeting}) =>{
     return ( 
         <div className= "carritoclass">
-            <h2> hola </h2>
+            <h2> {greeting}</h2>
         </div>
     
 

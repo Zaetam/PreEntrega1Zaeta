@@ -3,7 +3,7 @@ const Navbar = (props) =>{
     return (
         <>
            <header>
-      <nav className="navbar fixed-top navbar-expand-lg bg-white border border-dark-subtle">
+      <nav className="navbar navbar-expand-lg bg-white border border-dark-subtle">
         <div className="container-fluid">
             <a className="navbar-brand " href=""> <img src="/imagenes/logo_narita.JPG"   alt="Logo Narita" className="logonarita-class"/></a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
