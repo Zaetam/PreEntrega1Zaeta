@@ -8,7 +8,7 @@ function App() {
     
 
     <Navbar />
-    <ItemListContainer greeting={'Hola Mundo'}/>
+    <ItemListContainer greeting={'Hola, Mundo'}/>
 
 
    </div>
