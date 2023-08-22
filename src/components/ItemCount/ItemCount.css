@@ -1,0 +1,10 @@
+div.divitem{
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    padding:1%;
+    height:70px;
+}

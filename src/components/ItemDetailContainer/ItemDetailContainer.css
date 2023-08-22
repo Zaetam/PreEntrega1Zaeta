@@ -1,0 +1,25 @@
+div.divitemlist {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding:1%;
+    
+}
+
+div.divitemlist article{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+}
+div.divitemlist article section{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
+div.divitemlist article section p{
+    font-size:20px;
+   
+}
