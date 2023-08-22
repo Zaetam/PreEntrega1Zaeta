@@ -16,9 +16,9 @@ const Navbar = (props) =>{
 
                 
                 <div className="categorias">
-                <NavLink to ={`/category/Beachwear`} className={({ isActive})=> isActive ? 'ActiveOption' : 'Option'}>Beachwear</NavLink>
-                <NavLink to ={ `/category/Día`} className={({ isActive})=> isActive ? 'ActiveOption' : 'Option'}>Día</NavLink>
-                <NavLink to ={ `/category/Noche`} className={({ isActive})=> isActive ? 'ActiveOption' : 'Option'}>Noche</NavLink>
+                <NavLink to ={`/category/Beachwear`} className={({ isActive})=> isActive ? 'ActiveOption navbarra' : 'Option navbarra'}>Beachwear</NavLink>
+                <NavLink to ={ `/category/Día`} className={({ isActive})=> isActive ? 'ActiveOption navbarra' : 'Option navbarra'}>Día</NavLink>
+                <NavLink to ={ `/category/Noche`} className={({ isActive})=> isActive ? 'ActiveOption navbarra' : 'Option navbarra'}>Noche</NavLink>
                 </div>
             </div>
         </div>

@@ -1,10 +1,11 @@
 
 import ItemCount from '../ItemCount/ItemCount'
+import "./ItemDetail.css"
 
 
 const ItemDetail= ({id, name, img, category, description, price, stock}) => {
     return (
-        <article className="shadow p-3 mb-5 bg-body-tertiary rounded">
+        <article className="cuadradito shadow p-3 mb-5 bg-body-tertiary rounded">
             <header>
                 <h2>
                     {name}

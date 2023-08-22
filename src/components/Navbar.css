@@ -1,12 +1,13 @@
 .categorias {
-font-size: 30px;
+font-size: 28px;
 
 display: flex;
 justify-content:space-around;
 width: 50%;
 }
 
-.categorias Navbar{
+.navbarra {
 text-decoration: none;
+color: black;
 
 }

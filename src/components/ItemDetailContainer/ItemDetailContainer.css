@@ -1,4 +1,4 @@
-div.divitemlist {
+div.divitemdetail {
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -6,20 +6,20 @@ div.divitemlist {
     
 }
 
-div.divitemlist article{
+div.divitemdetail article{
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap:5px;
+    gap:1px;
 }
-div.divitemlist article section{
+div.divitemdetail article section{
     
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1px;
 }
-div.divitemlist article section p{
+div.divitemdetail article section p{
     font-size:20px;
    
 }
