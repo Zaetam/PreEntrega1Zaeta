@@ -12,7 +12,7 @@ const ItemList=({products})=> {
           ))}
        
         </div>
-      );
+      )
     
 
 };

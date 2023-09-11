@@ -1,20 +1,37 @@
-
+import { Link } from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount'
 import "./ItemDetail.css"
+import {useContext, useState} from 'react'
+
+import { CartContext } from '../../context/CartContext'
 
 
-const ItemDetail= ({id, name, img, category, description, price, stock}) => {
+    const ItemDetail= ({id, title, image, category, description, price, stock}) => {
+    const[quantityAdded, setQuantityAdded]=useState(0)
+
+    const {addItem}=useContext(CartContext)
+
+    const handleOnAdd= (contador)=> {
+        setQuantityAdded(contador)
+
+        const item={
+            id,title,price
+        }
+
+        addItem(item,contador)
+    }
+
     return (
         <article className="cuadradito shadow p-3 mb-5 bg-body-tertiary rounded">
             <header>
                 <h2>
-                    {name}
+                    {title}
                 </h2>
 
             </header>
 
             <picture>
-                <img src={img} alt={name} />
+                <img src={image} alt={title} />
             </picture>
 
             <section>
@@ -32,8 +49,12 @@ const ItemDetail= ({id, name, img, category, description, price, stock}) => {
             </section>
 
             <footer>
-                
-                <ItemCount initial={1} stock={stock} onAdd={(contador)=> console.log(contador)}/>  
+                {quantityAdded>0 ? (
+                    <Link to='/cart'> Terminar compra</Link>
+                ) :(
+                    <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
+                )
+                 }
             </footer>
 
 

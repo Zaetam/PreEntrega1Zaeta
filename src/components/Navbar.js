@@ -4,7 +4,7 @@ import {NavLink, Link} from 'react-router-dom'
 
 const Navbar = (props) =>{
     return (
-        <>
+        
            <header>
       <nav className="navbar navbar-expand-lg bg-white border border-dark-subtle">
         <div className="container-fluid">
@@ -25,8 +25,8 @@ const Navbar = (props) =>{
         <Carwidget/>
       </nav>
         
-    </header>;
-        </>
+    </header>
+    
     );
 };
 
