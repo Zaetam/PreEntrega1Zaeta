@@ -50,7 +50,7 @@ import { CartContext } from '../../context/CartContext'
 
             <footer>
                 {quantityAdded>0 ? (
-                    <Link to='/cart'> Terminar compra</Link>
+                    <Link to='/cart' className='Option btn btn-primary '> Terminar compra</Link>
                 ) :(
                     <ItemCount initial={1} stock={stock} onAdd={handleOnAdd}/>
                 )

@@ -1,0 +1,18 @@
+article.listado{
+    display:flex;
+    flex-direction:row;
+    align-items:baseline;
+    justify-content: space-between
+    
+
+    
+}
+
+
+article.listado h2{
+    font-size: 20px;
+}
+
+article button.botoneliminar{
+    margin-left: 500px;
+}

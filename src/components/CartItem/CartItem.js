@@ -1,6 +1,7 @@
 //import {useState} from "react";
 import {useContext} from "react";
 import { CartContext } from "../../context/CartContext";
+import "./Cartitem.css"
 
 
 const CartItem= ({id,title,image,price,contador}) => {
@@ -17,19 +18,20 @@ const CartItem= ({id,title,image,price,contador}) => {
     
 
     return (
-        <article className="cuadradito shadow p-3 mb-5 bg-body-tertiary rounded">
+        
+        <article className=" listado p-3 bg-body-tertiary rounded">
             
-
-            <div>
+          
+            
                 <h2>
                     {title}
                 </h2>
 
-            </div>
+            
 
-            <section>
+            
                 <p>
-                    Cantidad:${contador}
+                    Cantidad:{contador}
                 </p>    
                 <p>
                     Precio por unidad:${price}
@@ -37,12 +39,13 @@ const CartItem= ({id,title,image,price,contador}) => {
                 <p>
                     Subtotal:${price*contador}
                 </p>
-            </section>
+               
 
-            <button onClick={()=> removeItem(id)}>Eliminar</button>
+                <button className="botoneliminar"onClick={()=> removeItem(id)}>Eliminar</button>
 
 
         </article>
+       
     )
 }
 

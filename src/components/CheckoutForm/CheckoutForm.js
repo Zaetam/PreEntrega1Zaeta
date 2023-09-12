@@ -5,14 +5,20 @@ const CheckoutForm =({onConfirm}) => {
     const [phone, setPhone]=useState('')
     const [email, setEmail]=useState('')
 
-    const handleConfirm= (event) =>
+    const handleConfirm= (event) =>{
         event.preventDefault()
+
+        if (!name || !phone || !email) {
+                        alert("Por favor, completa todos los campos.");
+                        return; // Detiene el proceso si falta algún dato
+        }
 
         const userData={
             name,phone,email
         }
 
         onConfirm(userData)
+    }
 
     return(
         <div>
@@ -60,5 +66,6 @@ const CheckoutForm =({onConfirm}) => {
 
     )
 }
+
 
 export default CheckoutForm
