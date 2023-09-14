@@ -19,15 +19,14 @@ const Cart= () => {
     else{
 
         return(
-        <div>
-            {cart.map (p => <CartItem key={p.id}{...p}/>)}
-            <h3> Total: ${total}</h3>
-
-            <div className="botones">
-            <button className="btn btn-primary " onClick={() =>clearCart()} style={{width:'45%'}}>Vaciar Carrito</button>
-            <Link className="btn btn-primary " style={{width:'45%'}} to='/checkout'>Checkout</Link>
+            <div>
+                {cart.map (p => <CartItem key={p.id}{...p}/>)}
+                <h3> Total: ${total}</h3>
+                <div className="botones">
+                    <button className="btn btn-primary " onClick={() =>clearCart()} style={{width:'45%'}}>Vaciar Carrito</button>
+                    <Link className="btn btn-primary " style={{width:'45%'}} to='/checkout'>Checkout</Link>
+                </div>
             </div>
-        </div>
         )
     }    
 }

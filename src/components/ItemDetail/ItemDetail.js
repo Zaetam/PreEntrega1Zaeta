@@ -5,7 +5,6 @@ import {useContext, useState} from 'react'
 
 import { CartContext } from '../../context/CartContext'
 
-
     const ItemDetail= ({id, title, image, category, description, price, stock}) => {
     const[quantityAdded, setQuantityAdded]=useState(0)
 

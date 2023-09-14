@@ -1,6 +1,5 @@
 div.divitem{
-
-    
+   
     display: flex;
     flex-direction: column;
     justify-content:space-between;
@@ -13,8 +12,8 @@ div.botonesmm{
     display: flex;
     flex-direction: row;
 
-
 }
+
 div.btnagregar{
     margin-top: 5%;
     margin-left: 15%;

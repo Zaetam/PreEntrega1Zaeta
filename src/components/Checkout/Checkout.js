@@ -6,9 +6,6 @@ import db from "../../index.js"
 import {getDocs, collection, query, where,addDoc} from 'firebase/firestore'
 import './Checkout.css'
 
-
-
-
 const Checkout =() => {
     const[loading, setLoading]=useState(false)
     
@@ -32,7 +29,7 @@ const Checkout =() => {
             const batch= writeBatch(db)
 
             const outOfStock=[]
-            //en una variable docs guardo detale de los items en el carrito que vienen de firestore y tengo su stock y lo comparo con el contador del carrito para ver que no tenga más pedido que el stock
+            //en una variable docs guardo detale de los items en el carrito que vienen de firestore y tengo su stock y lo comparo con el contador del carrito
             const ids=cart.map (prod => prod.id)
             const productsRef= collection (db,'items')
             const productsAddedFromFirestore= await getDocs (query (productsRef,where (documentId(), 'in', ids)))
@@ -52,7 +49,7 @@ const Checkout =() => {
 
             })
 
-            //ahora sube la información a items y crea las ordenes
+            //ahora subo la información a items y creo las ordenes
 
             if(outOfStock.length ===0){
                 await batch.commit ()

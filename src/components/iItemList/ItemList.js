@@ -3,16 +3,16 @@ import "./ItemList.css"
 
 
 const ItemList=({products})=> {
-    
-    return (
-        <div className="divitemlist">
+  
+  return (
+    <div className="divitemlist">
          
-          {products.map ((prod )=> (
-          <Item key= {prod.id} {...prod}/>
-          ))}
+      {products.map ((prod )=> (
+        <Item key= {prod.id} {...prod}/>
+      ))}
        
-        </div>
-      )
+    </div>
+  )
     
 
 };

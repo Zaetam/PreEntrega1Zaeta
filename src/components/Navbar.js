@@ -32,11 +32,4 @@ const Navbar = (props) =>{
 
 export default Navbar;
 
-//despues de a
-
-//<a className="navbar-brand " href=""> <img src="/imagenes/logo_narita.JPG"   alt="Logo Narita" className="logonarita-class"/></a>
-
-//<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-//<span className="navbar-toggler-icon"></span>
-//</button>
 

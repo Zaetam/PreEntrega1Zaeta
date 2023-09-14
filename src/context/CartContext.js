@@ -8,31 +8,17 @@ export const CartContext= createContext({
 export const CartProvider= ({children})=> {
     const [cart, setCart]=useState([])
 
-    //agrego dos variables más
-
-    //suma de cantidades
-
-   // const [totalQuantity, setTotalQuantity]=useState([])
-
     const reduction=function acumular (acumulador,producto){
         acumulador=acumulador + producto.contador
         return acumulador
     }
-   const totalQuantity=cart.reduce(reduction,0)
-    //setTotalQuantity(cantidadTotal)
-
-    //suma de precio*cantidades
-
-   // const [total, setTotal]=useState([])
-
+    const totalQuantity=cart.reduce(reduction,0)
+    
     const sumPrice=function sumar (acumuladorSuma,producto){
         acumuladorSuma=acumuladorSuma + producto.contador*producto.price
         return acumuladorSuma
     }
-   const total=cart.reduce(sumPrice,0)
-   // setTotal(importeTotal)
-
-    console.log(cart)
+    const total=cart.reduce(sumPrice,0)
 
     const addItem=(item, contador) => {
         if (!isInCart(item.id)) {
@@ -55,14 +41,7 @@ export const CartProvider= ({children})=> {
         return cart.some(prod => prod.id === itemId)
     }
 
-  //useEffect
- //   useEffect (()=>{
-   //     const cantidadTotal=cart.reduce(reduction,0)
-     //   setTotalQuantity(cantidadTotal)
-       // const importeTotal=cart.reduce(sumPrice,0)
-        //setTotal(importeTotal)
-
-    //}, [cart])
+ 
 
 
 

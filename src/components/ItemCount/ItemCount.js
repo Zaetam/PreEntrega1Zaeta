@@ -38,6 +38,3 @@ const ItemCount=({initial,stock,onAdd})=>{
 };
 
 export default ItemCount;
-
-//onAdd={(contador)=>console.log('Cantidad agregada', contador)}
-//onClick={()=> onAdd(contador)} 
