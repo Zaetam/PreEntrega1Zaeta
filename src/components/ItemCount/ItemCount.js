@@ -22,12 +22,12 @@ const ItemCount=({initial,stock,onAdd})=>{
      
     return(
         <div className="divitem">
-            <div>
-                <button onClick={decrement} className="btn btn-primary">-</button>
-                {"                   "}{contador}{"                   "}
-                <button onClick={increment} className="btn btn-primary">+</button>
+            <div className="botonesmm">
+                <button onClick={decrement} className="btn btn-primary btnmenos">-</button>
+                {"   "}{contador}{"   "}
+                <button onClick={increment} className="btn btn-primary btnmas">+</button>
             </div>
-            <div >
+            <div className="btnagregar">
                 <button className="btn btn-primary" onClick={()=> onAdd(contador)} disabled={!stock}>
                 Agregar al carrito
                 </button>

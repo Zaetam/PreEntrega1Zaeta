@@ -8,3 +8,23 @@ div.divitem{
     padding:1%;
     height:70px;
 }
+
+div.botonesmm{
+    display: flex;
+    flex-direction: row;
+
+
+}
+div.btnagregar{
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+div button.btnmenos{
+    margin-right: 20%;
+}
+
+div button.btnmas{
+    margin-left: 20%;
+}
+

@@ -31,17 +31,17 @@ const CartItem= ({id,title,image,price,contador}) => {
 
             
                 <p>
-                    Cantidad:{contador}
+                    Cantidad: {contador}
                 </p>    
                 <p>
-                    Precio por unidad:${price}
+                    Precio por unidad: ${price}
                 </p>
                 <p>
-                    Subtotal:${price*contador}
+                    Subtotal: ${price*contador}
                 </p>
                
 
-                <button className="botoneliminar"onClick={()=> removeItem(id)}>Eliminar</button>
+                <button className="botoneliminar btn btn-secondary"onClick={()=> removeItem(id)}>Eliminar</button>
 
 
         </article>

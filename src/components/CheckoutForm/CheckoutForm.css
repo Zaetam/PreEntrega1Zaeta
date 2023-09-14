@@ -1,0 +1,19 @@
+form fieldset.fieldset{
+    display: flex;
+    flex-direction: column;
+}
+
+form fieldset div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+}
+
+div.flex-formulario{
+    display: flex;
+    justify-content: center;
+    padding-right: 50%;
+    padding-top: 2%;
+    
+}
+  

@@ -1,4 +1,6 @@
 import { useState } from "react"
+import './CheckoutForm.css';
+
 
 const CheckoutForm =({onConfirm}) => {
     const [name, setName]=useState('')
@@ -21,45 +23,48 @@ const CheckoutForm =({onConfirm}) => {
     }
 
     return(
-        <div>
-            <form onSubmit={handleConfirm}>
-                <label>
-                    Nombre
-                    <input
-                        className='Input'
-                        type='text'
-                        value={name}
-                        onChange={({target})=> setName(target.value)}
-                    />
-                </label>
+        <div className="flex-formulario">
+  <form onSubmit={handleConfirm}>
+    <fieldset className="fieldset shadow-lg p-3 mb-5 bg-body-tertiary rounded">
+      <div className="form-group">
+        <label htmlFor="name">Nombre</label>
+        <input
+          className='Input'
+          type='text'
+          id="name"
+          value={name}
+          onChange={({target})=> setName(target.value)}
+        />
+      </div>
 
-                <label>
-                    Teléfono
-                    <input
-                        className='Input'
-                        type='text'
-                        value={phone}
-                        onChange={({target})=> setPhone(target.value)}
-                    />
-                </label>
+      <div className="form-group">
+        <label htmlFor="phone">Teléfono</label>
+        <input
+          className='Input'
+          type='text'
+          id="phone"
+          value={phone}
+          onChange={({target})=> setPhone(target.value)}
+        />
+      </div>
 
-                <label>
-                    E-mail
-                
-                    <input
-                        className='Input'
-                        type='email'
-                        value={email}
-                        onChange={({target})=> setEmail(target.value)}
-                    />
-                </label>
+      <div className="form-group">
+        <label htmlFor="email">E-mail</label>
+        <input
+          className='Input'
+          type='email'
+          id="email"
+          value={email}
+          onChange={({target})=> setEmail(target.value)}
+        />
+      </div>
 
-                <div>
-                    <button type='submit'>Enviar Orden</button>
-                </div>
-
-            </form>
-        </div>
+      <div>
+        <button type='submit' className="btn btn-primary">Enviar Orden</button>
+      </div>
+    </fieldset>
+  </form>
+</div>
 
 
 
